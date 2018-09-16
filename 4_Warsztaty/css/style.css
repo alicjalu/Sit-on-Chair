@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,800,900&subset=latin-ext');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Raleway', Tahoma, Arial, sans-serif;;
 }
 
-.center{
+.center {
     max-width: 1056px;
     width: 100%;
     margin: 0 auto;
 }
 
-.container{
+.container {
     display: flex;
 }
 
-header{
+header {
     background-color: black;
     height: 42px;
     text-transform: uppercase;
@@ -29,35 +29,116 @@ header{
     letter-spacing: 0;
 }
 
-span{
+span {
     color: #20B196;
 }
 
-.main__header{
+.main__header {
     justify-content: space-between;
     padding-top: 14px;
 }
 
-.header__logo{
+.header__logo {
     text-decoration: none;
     color: #ffff;
 }
 
-.main__nav{
+.main__nav {
     list-style-type: none;
     justify-content: space-between;
 }
 
-.nav__element{
+.nav__element {
     list-style-type: none;
     padding-left: 39px;
 }
 
-.nav__item{
+.nav__item {
     text-decoration: none;
     color: #ffff;
 }
 
-li:nth-child(2){
+li:nth-child(2) {
     padding-left: 52px;
+}
+
+.nav__list {
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.slider {
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(191, 191, 191, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(191, 191, 191, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(191, 191, 191, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(191, 191, 191, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(191, 191, 191, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(191, 191, 191, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#bfbfbf', GradientType=0);
+    height: 504px;
+
+}
+
+.slider__text {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.slider__heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+}
+
+.slider__ipsum {
+    text-align: center;
+    font-size: 15px;
+}
+
+.button_seeMore{
+    text-align: center;
+}
+
+.slider__image{
+    padding-top: 40px;
+}
+
+.slider__blackChair{
+    width: 321px;
+    height: auto;
+}
+
+chairs{
+    background-color: RGB(254, 255, 255);
+    justify-content: space-between;
+    height: 350px;
+}
+
+.chairs_first{
+    padding-top: 28px;
+    padding-right: 26px;
+    padding-bottom: 96px;
+}
+
+.chairs__second{
+    padding-top: 28px;
+    padding-right: 26px;
+    padding-bottom: 96px;
+}
+
+.chairs__info{
+    margin-top: 28px;
+    border: 1px solid rgb(213, 214, 215);
+    height: 253px;
+}
+
+.price{
+    height: 724px;
+    background-color: rgb(238, 239, 240);
 }
