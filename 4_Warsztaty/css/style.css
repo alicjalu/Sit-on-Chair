@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,800,900&subset=latin-ext');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', Tahoma, Arial, sans-serif;;
+}
+
+.center{
+    max-width: 1056px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+}
+
+header{
+    background-color: black;
+    height: 42px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+span{
+    color: #20B196;
+}
+
+.main__header{
+    justify-content: space-between;
+    padding-top: 14px;
+}
+
+.header__logo{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.main__nav{
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.nav__element{
+    list-style-type: none;
+    padding-left: 39px;
+}
+
+.nav__item{
+    text-decoration: none;
+    color: #ffff;
+}
+
+li:nth-child(2){
+    padding-left: 52px;
+}
