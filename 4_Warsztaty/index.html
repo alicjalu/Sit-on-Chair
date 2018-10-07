@@ -4,71 +4,218 @@
     <meta charset="UTF-8">
     <title>Warsztat - strona z fotelami</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="js/app.js" defer></script>
 </head>
 <body>
+
 <!-- Header strony -->
-<header class=>
-    <section class="container main__header center">
-        <a href="" class="header__logo">Sit <span>on</span> chair</a>
-        <nav class="main__nav">
-            <ul class="container nav__list">
-                <li class="nav__element"><a href="" class="nav__item">O firmie</a></li>
-                <li class="nav__element"><a href="" class="nav__item">Galeria</a></li>
-                <li class="nav__element"><a href="" class="nav__item">Kontakt</a></li>
+
+<header class="page_header">
+    <section class="center row">
+
+        <!--logo-->
+
+        <a href="#" class="header_logo">Sit <span class="span-color">on</span> chair</a>
+
+        <!--nawigacja-->
+
+        <nav class="header__nav">
+            <ul class="main_nav row">
+                <li class="nav__element"><a href="" class="nav__link dropdown__trigger">O firmie</a>
+                <ul class="dropdown__menu">
+                    <li class="dropdown__element"><a href="#" class="dropdown__item toLower">Aktualności</a></li>
+                    <li class="dropdown__element"><a href="#" class="dropdown__item toLower">Nasz team</a></li>
+                    <li class="dropdown__element"><a href="#" class="dropdown__item toLower">Historia</a></li>
+                </ul>
+                </li>
+                <li class="nav__element"><a href="" class="nav__link">Galeria</a></li>
+                <li class="nav__element"><a href="" class="nav__link">Kontakt</a></li>
             </ul>
         </nav>
     </section>
 </header>
+
 <!--Fotel i opis-->
-<section class="slider container">
-    <div class="slider__body  center container">
-        <div class="slider__image">
-            <img class="slider__blackChair" src="images/black_chair.png">
+
+<section class="main_slider">
+    <div class="row center">
+        <i class="fas fa-angle-left slider__btn prev"></i>
+        <div class="main__slider__photo">
+            <ul>
+                <li><img src="images/black_chair.png" class="slider__img"></li>
+                <li><img src="images/orange_chair.png" class="slider__img"></li>
+                <!--<li><img src="images/red_chair.png" class="slider__img red_chair"></li>-->
+            </ul>
+            <!--<img src="images/black_chair.png" class="slider__img">-->
         </div>
-        <div class="slider__text container">
-            <p class="slider__heading">Sit <span> on</span> our <span>chair</span></p>
-            <p class="slider__ipsum">
-                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas
-                malesuada elit lectus felis, malesuada ulticies. Curabitur et ligula. Ut molestie a, ultricies porta
-                urna.
+        <article class="column slider__title">
+            <h1 class="toUppercase slider__heading">Sit <span class="span-color"> on</span> our <span
+                    class="span-color">chair</span></h1>
+            <p class="slider__article">
+                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
+                Maecenas malesuada elit lectus felis, malesuada ulticies. Curabitur et ligula. Ut molestie a, ultricies
+                porta urna.
             </p>
-            <a href="" class="button_seeMore">Zobacz więcej</a>
-        </div>
+            <div class="slider__bttn">
+                <a href="#" class="slider__button toUppercase">Zobacz więcej</a>
+            </div>
+        </article>
+        <i class="fas fa-angle-right slider__btn next"></i>
     </div>
 
 </section>
-<!--Zdjęcia foteli-->
-<section class="center container chairs">
-    <div class="chairs_first">
-        <img src="images/box1_img.jpg">
-    </div>
-    <div class="chairs__second">
-        <img src="images/box2_img.jpg">
 
+<!--Zdjęcia foteli-->
+
+<section class="center row chair__pic">
+    <div class="chair__pic1">
+        <p class="chair__pic1__title ">
+            Chair CLAIR
+        </p>
     </div>
-    <div class="chairs__info">
-        <p>
+    <div class="chair__pic2">
+        <p class="chair__pic2__title">
+            Chair MARGARITA
+        </p>
+    </div>
+    <div class="chair__pic__info">
+        <p class="chair__pic__info__title">
             Find all inputs
         </p>
-        <p>
+        <p class="chair__pic__info__main">
             Finds all inputs that are not checked and highlights the next sibling span. Notice the is no change when
             clicking the checkboxes since no click events have been linked.
         </p>
-        <p>
+        <p class="chair__pic__info__foot">
             Notice the is no change when clicking the checkboxes since no events have been
         </p>
     </div>
-
 </section>
+
 <!--Cennik-->
-<section class="price">
 
+<section class="price__section">
+    <div class="center">
+        <span class="price__head">CENNIK</span>
+        <div class="row">
+            <div class="column price">
+                <div class="price__title">
+                    <span>BASIC PLAN</span>
+                </div>
+                <div class="price__price column">
+                    <p class="price__big">85<sup class="price__small">99</sup></p>
+                    <br>
+                    <p>PLN/MSC</p>
+                </div>
+                <div class="column price__option">
+                    <div class="price__delivery">
+                        <p>Zakup towaru + dowóz</p>
+                    </div>
+                    <div class="price__service">
+                        <p>Serwis</p>
+                    </div>
+                </div>
+                <div class="price__button">
+                    <a href="#" class="price__btn">DOŁĄCZ</a>
+                </div>
+            </div>
+            <div class="column price">
+                <div class="price__title">
+                    <span>STANDARD PLAN</span>
+                </div>
+                <div class="price__price column">
+                    <p class="price__big">95<sup class="price__small">99</sup></p>
+                    <br>
+                    <p>PLN/MSC</p>
+                </div>
+                <div class="price__option">
+                    <div class="price__delivery">
+                        <span>Zakup towaru + dowóz</span>
+                    </div>
+                    <div class="price__service">
+                        <span>Serwis</span>
+                    </div>
+                    <div class="price__warranty">
+                        <span>Gwarancja 5 lat</span>
+                    </div>
+                </div>
+                <div class="price__button">
+                    <a href="#" class="price__btn">DOŁĄCZ</a>
+                </div>
+            </div>
+            <div class="column price">
+                <div class="price__title">
+                    <span>ADVANCE PLAN</span>
+                </div>
+                <div class="price__price column">
+                    <p class="price__big">211<sup class="price__small">00</sup></p>
+                    <br>
+                    <p>PLN/MSC</p>
+                </div>
+                <div class="price__option">
+                    <div class="price__delivery">
+                        <span>Zakup towaru + dowóz</span>
+                    </div>
+                    <div class="price__service">
+                        <span>Serwis</span>
+                    </div>
+                    <div class="price__warranty">
+                        <span>Gwarancja 6 lat</span>
+                    </div>
+                    <div class="price__advice">
+                        <span>Porady projektanta</span>
+                    </div>
+                </div>
+                <div class="price__button">
+                    <a href="#" class="price__btn">DOŁĄCZ</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
 <!--Formularz-->
-<section class="">
 
+<section class="form__section center">
+    <span class="form__title">KONTAKT</span>
+    <div class="row center">
+        <div class="form__input">
+            <form class="column">
+                <input type="text" id="firstname" name="firstname" placeholder="Imię" class="form__name">
+                <br>
+                <input type="email" id="email" name="email" placeholder="email" class="form__email">
+                <br>
+                <textarea name="message" id="message" placeholder="Wiadomość" class="form__message"></textarea>
+            </form>
+        </div>
+        <div class="form__verify column red">
+            <div class="form__pic">
+            </div>
+            <div class="row form__verify__checkbox red">
+                <input title="agreement" type="checkbox" name="agree" id="agree" class="form__checkbox red">
+                <p class="checkbox__agreement red">Zgadzam się na przetwarzanie danych osobowych</p>
+            </div>
+            <div class="form__button">
+                <a href="#" class="form__btn">WYŚLIJ</a>
+            </div>
+        </div>
+    </div>
 </section>
-<footer class="">
+<footer class="footer__section center row">
+    <div class="footer__copy">
+        <p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
+    </div>
+    <div class="footer__icons">
+        <img src="images/flickr.png">
+        <img src="images/vimeo.png">
+        <img src="images/pinterest.png">
+        <img src="images/twitter.png">
+    </div>
+    <div class="footer__sitonchair">
+        <p>SIT <strong>ON</strong> CHAIR</p>
+    </div>
 
 </footer>
 
